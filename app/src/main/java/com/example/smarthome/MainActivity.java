@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        createContact("Test 1", "test1@gmail.com", "999-999-9999", "HOME");
+        createContact("Test Post", "testpost@gmail.com", "000-000-0000", "HOME");
 
         String name = "rh";
         String type = "HOME";
@@ -109,12 +109,12 @@ public class MainActivity extends AppCompatActivity {
                     ResponseBody responseBody = response.body();
                     String body = responseBody.string();
                     Log.d("http", "onResponse: " + body);
-//
+
                 }else{
                     ResponseBody responseBody = response.body();
                     String body = responseBody.string();
                     Log.d("http", "onResponse: " + body);
-//
+
                 }
 
             }
